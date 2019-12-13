@@ -1,0 +1,76 @@
+/* style for DuckDuckDuck order page */
+
+main {
+    background-image: url(../img/order-bg.jpg);
+    height: 150vh;
+}
+
+/*increase height of main on small screens (so form does not extend past main background)*/
+@media screen and (max-width: 415px){
+    main {
+        height: 250vh;
+    }
+}
+
+form {
+    position: relative;
+    top: 13vh;
+    width: 80%;
+    margin: 0 10%;
+    background-image: linear-gradient(210deg, burlywood, rgb(197, 104, 61));
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    width: 70%;
+    padding: 2% 2%;
+    margin: 3%;
+    background-color: lightgray;
+    color: black;
+    font: 122% 'Helvetica' ,'Arial' ,sans-serif;
+    line-height: 160%;
+    border: 4px ridge black;
+}
+
+form p{
+    font-style: italic;
+    font-weight: 800;
+    margin-top: 2%;
+}
+legend {
+    font: 3.5vmin 'Helvetica' ,'Arial' ,sans-serif;
+    font-weight: 800;
+    background-color: lightgray;
+    border-radius: 35%;
+    padding: 1%;
+}
+
+input {
+    margin-right: 2%;
+}
+
+select {
+    margin-right: 2%;
+}
+
+button  {
+  margin-bottom: 2%;
+  border: 3px solid black;
+  border-radius: 10%;
+  background-color: rgb(14, 163, 46);
+  color: white;
+  padding: 15px 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgreen;
+    color: black;
+}

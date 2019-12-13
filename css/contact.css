@@ -1,0 +1,45 @@
+/* style for DuckDuckDuck contact page */
+
+main {
+    background-image: url(../img/order-bg.jpg);
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    top: 12vh;
+    width: 60%;
+    height: 85%;
+    margin: 0% 20%;
+    background-image: linear-gradient(200deg, burlywood, rgb(197, 104, 61));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 3px solid red;
+}
+
+section {
+    width: 50%;
+    border-radius: 50%;
+    background-color: lightblue;
+    text-align: center;
+    padding: 3% 1%;
+    margin: 2% 0;
+    font-size: 2.2vmin;
+}
+
+section h2 {
+    text-decoration: underline;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+
+/*decrease font size on small screens*/
+@media screen and (max-width: 900px){
+    section {
+        font-size: 60%;
+        width: 80%;
+    }
+}

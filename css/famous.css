@@ -1,0 +1,59 @@
+/* style for DuckDuckDuck famous ducks page */
+
+main {
+    background-image: url(../img/order-bg.jpg);
+    height: 150vh;
+}
+
+article {
+    position: relative;
+    display: inline-block;
+    top: 12vh;
+    width: 80%;
+    margin: 0 10%;
+    background-image: linear-gradient(225deg, rgb(190, 207, 207), rgb(101, 145, 145));
+    border: 3px solid red;
+    font: 2.2vmin 'Arial, Helvetica, sans-serif' ;
+}
+
+article p {
+    text-indent: 5%;
+    line-height: 135%;
+    width: 62%;
+    margin-right: 23%;
+    margin-left: 15%;
+    margin-top: 4%;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 2% 0;
+    font-size: 3.5vmin;
+}
+
+figure {
+    margin: 0 2%;
+    font-weight: 800;
+    font-style: italic;
+    width: 20vmin;
+    height: 25vmin;
+}
+
+figure img {
+    width: 20vmin;
+    height: 25vmin;
+}
+
+#skiDuck {
+    margin-bottom: 10%;
+}
+.left {
+    float: left;
+    clear: right;
+}
+
+.right {
+    float: right;
+    clear: left;
+}

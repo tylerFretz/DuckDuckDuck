@@ -1,0 +1,97 @@
+/* style for DuckDuckDuck home */
+
+
+/* introduction */
+
+.intro {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/landscape.jpg);
+  background-size: cover;
+  color: rgb(238, 238, 238);
+}
+
+.intro div {
+  position: relative;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.intro-center {
+  top: 25%;
+  padding: 1% 0;
+  font: 6vmin 'Alfa Slab One', cursive;
+  line-height: 250%;
+}
+
+#intro-top {
+  word-spacing: 480%;
+}
+
+.intro a {
+  width: 20%;
+  margin: 10% 40%;
+  padding: 2% 0;
+  border-radius: 30%;
+  background-color: rgb(214, 172, 112);
+  font: 3vmin 'Alfa Slab One', cursive;
+}
+
+.intro a:hover {
+  background-color: rgb(189, 136, 61);
+}
+
+/* about */
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(157, 215, 128);
+  color: white;
+  margin-top: -3%;
+}
+
+.about-title {
+  width: 70%;
+  margin: 3% 3%;
+  font: 5vmin 'Alfa Slab One', cursive;
+}
+
+.about-title #com-title {
+  color: orangered;
+}
+
+.row {
+  position: relative;
+  width: 90%;
+  height: 50%;
+  top: 4%;
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row-box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-img { 
+  height: 55%;
+}
+
+.row-text {
+  height: 45%;
+  color: black;
+  background-color: rgb(240, 173, 78);
+  font: 1.9vmin 'Alfa Slab One', cursive;
+  line-height: 200%;
+}
+
+.row-img img {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DuckDuckDuck Order</title>
+        <link rel = "stylesheet" type = "text/css" href ="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/order.css" />
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Kaushan+Script&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">                                                              <!--logo that links to home page-->
+                    <a href="../index.html" title="Home"><img src="../img/duck.svg" alt=""></a> 
+                    <a href="../index.html" title="Home">DuckDuckDuck</a>
+                </div>
+                <ul>                                                                                <!--main navigation-->
+                    <li><a href="order.html" title="Order">Order Now</a></li>
+                    <li><a href="testimonial.html" title="Testimonials">Testimonials</a></li>
+                    <li><a href="famous.html" title="Famous Ducks">Famous Ducks</a></li>
+                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                </ul>
+        </nav>
+        </header>
+        <main>
+            <form id="order" method="GET" action="duck-form.php">
+
+                <fieldset class="duck" form="order">                                                <!--Duck Options-->
+                    <legend>Order your Duck!</legend>
+                    <p>Select the gender of your duck</p>                                           <!--duck gender option-->
+                    <input type="radio" id="male" name="sex" value="male">
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female">Female</label>
+                    <br>
+
+                    <p>Select the species of duck you want</p>                                      <!--duck species option-->
+                    <label for="species">Species: </label>
+                    <select id="species" name="speciesList" form="order">
+                        <option value="African Black">African Black</option>
+                        <option value="Blue-Winged Goose">Blue-Winged Goose</option>
+                        <option value="Cape Shoveler">Cape Shoveler</option>
+                        <option value="Common Scoter">Common Scoter</option>
+                        <option value="Egyptian Goose">Egyptian Goose</option>
+                        <option value="Western Spot-Billed Duck">Western Spot-Billed Duck</option>
+                        <option value="Yellow-Billed Duck">Yellow-Billed Duck</option>
+                    </select>
+                    <br>
+
+                    <p>Choose your Duck's level of Quackiness</p>                                   <!--duck quackiness option-->
+                    <label for="Quackiness">Not Quacky</label>
+                    <input type="range" id="Quackiness" name="quackiness" min="0" max="20" step="2">
+                    <label for="Quackiness">Constant Quack</label>
+                    <br>
+
+                    <p>Choose additional Duck characteristics</p>                                   <!--additional duck options-->
+                    <input type="checkbox" id="flightless" name="char" value="flightless">
+                    <label for="flightless">Flightless</label>
+                    <br>
+                    <input type="checkbox" id="jokes" name="char" value="jokes">
+                    <label for="jokes">Tells jokes</label>
+                    <br>
+                    <input type="checkbox" id="carnivorous" name="char" value="carnivorous">
+                    <label for="carnivorous">Carnivorous</label>
+                    <br>
+                    <input type="checkbox" id="golden" name="char" value="golden">
+                    <label for="golden">Lays gold eggs</label>
+                    <br>
+                </fieldset>
+
+                <fieldset class="user-info" form="order">                                                   <!--User Address Info-->
+                    <legend>Shipping Information</legend>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" value="" placeholder="John" required>  <!--first name-->
+
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" value="" placeholder="Doe" required>     <!--last name-->
+                        <br>
+
+                        <label for="country">Country</label>                                                    <!--country-->
+                        <select id="country" form="order">
+                            <option>Afghanistan</option>
+                            <option>Beirut</option>
+                            <option>Canada</option>
+                            <option>Moldova</option>
+                            <option>United States</option>
+                        </select> 
+
+                        <label for="city">City:</label>                                                         <!--city-->
+                        <input type="text" id="city" name="city" value="" required>
+
+                        <label for="streetName">Street:</label>                                                 <!--street name-->
+                        <input type="text" id="streetName" name="streetName" value="" required>
+                        <br>
+
+                        <label for="aptNum">Apt #:</label>                                                      <!--apt #-->
+                        <input type="text" id="aptNum" name="aptNum" value="">
+
+                        <label for="postal">Postal/Zip Code:</label>                                            <!--postal code-->
+                        <input type="text" id="postal" name="postal" value="" required>
+                        <br>
+
+                        <label for="phone">Phone #:</label>                                                     <!--phone #-->
+                        <input type="tel" id="phone" name="phone" placeholder="(555)-555-5555" required>
+
+                        <!--I got the regex for the E-mail pattern from w3school-->
+                        <!--HTML input pattern Attribute. (n.d.). Retrieved October 29, 2019, 
+                        from https://www.w3schools.com/tags/att_input_pattern.asp. -->
+                        <label for="email">E-mail:</label>                                                      <!--Email-->
+                        <input type="email" id="email" name="email" placeholder="example@mail.ca" 
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <br>
+
+                        <label for="addDetails">Additional Details:</label>                                     <!--additional-->
+                        <textarea name="addInfo" id="addDetails"></textarea>
+                </fieldset>
+
+                <button id="submitButton" type="submit">Order Now!</button>
+
+            </form>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2019 DuckDuckDuck. All Rights Reserved.</p>
+            <p><small>Please Buy a Duck</small></p>
+        </footer>
+    </body>
+</html>

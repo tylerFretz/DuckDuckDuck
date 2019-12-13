@@ -1,0 +1,60 @@
+/* css for project testimonial page */
+
+main {
+    background-image: url(../img/order-bg.jpg);
+    height: 130vh;
+}
+
+.container {
+    position: relative;
+    top: 12vh;
+    width: 80%;
+    height: 70%;
+    margin: 0% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    background-color: burlywood;
+    padding: 1% 1%;
+    width: 90%;
+    border-top: 3px solid red;
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+    font: 2.5vmin 'Alfa Slab One', cursive;
+    text-align: center;
+}
+
+section {
+    width: 90%;
+    height: 40%;
+    background-color: burlywood;
+    color: black;
+    padding: 5% 2%;
+    display: flex;
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+    border-top: 5px outset;
+    border-bottom: 5px outset;
+}
+
+#middle {
+    background-color: bisque;
+}
+
+section img {
+    border: 2px solid black;
+    width: 20vmin;
+    height: 25vmin;
+}
+
+section p {
+    margin: 0 5%;
+    font: 2.3vmin 'Alfa Slab One', cursive;
+}
+.author {
+    font-style: italic;
+    font-size: 1.5vmin;
+}
